@@ -16,7 +16,7 @@ from base64 import b64encode
 def save_videos_grid(videos: torch.Tensor, path: str, rescale=False, n_rows=4, fps=8):
     videos = rearrange(videos, "b c t h w -> t b c h w")
     outputs = []
-    outputs_dir = "./tmp3"
+    outputs_dir = "./tmp"
     for i, x in enumerate(videos):
         x = torchvision.utils.make_grid(x, nrow=n_rows)
         x = x.transpose(0, 1).transpose(1, 2).squeeze(-1)
