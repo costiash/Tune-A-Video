@@ -1,5 +1,5 @@
-pretrained_model_path: "./checkpoints/stable-diffusion-v1-4"
-output_dir: "./outputs/man-surfing_lr3e-5_seed33"
+pretrained_model_path: "./stable-diffusion-v1-4"
+output_dir: "./outputs/man-surfing"
 
 train_data:
   video_path: "data/man-surfing.mp4"
